@@ -23,7 +23,7 @@ router.post('/missions',auth, async (req, res) => {
 // GET /missions?sortBy=createdAt:desc
 router.get('/missions', async (req, res) => {
     const match = {}
-    const sort = { missionName:1}
+    const sort = {}
     
     console.log(req.query)
 
