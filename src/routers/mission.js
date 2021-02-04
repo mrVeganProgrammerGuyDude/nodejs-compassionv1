@@ -92,7 +92,7 @@ router.get('/missions/:id', async (req, res) => {
 
 router.patch('/missions/:id',auth,  async (req, res) => {
     const updates = Object.keys(req.body)
-    const allowedUpdates = ['missionName', 'avgCompletionTime', 'missionDetails', 'badges']
+    const allowedUpdates = ['missionName', 'avgCompletionTime','completedCount', 'missionDetails', 'badges', 'missionEndorsements']
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update))
 
     if (!isValidOperation) {

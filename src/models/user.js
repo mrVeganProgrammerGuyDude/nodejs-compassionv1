@@ -42,6 +42,11 @@ const userSchema = new mongoose.Schema(
                 }
             }
         },
+        username: {
+            type: String,
+            default: '',
+            
+        },
         tokens: [{
             token: {
                 type: String,

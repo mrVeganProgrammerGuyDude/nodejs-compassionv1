@@ -26,6 +26,11 @@ const missionSchema = new mongoose.Schema({
         required: false,
         trim: true
     },
+    missionEndorsements: {
+        type: [],
+        required: false,
+        trim: true
+    },
     completedCount: {
         type: Number,
         default: 0
