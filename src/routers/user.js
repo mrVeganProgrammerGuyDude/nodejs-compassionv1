@@ -54,7 +54,7 @@ router.get('/users/me', auth, async (req, res) => {
     res.send(req.user)
 })
 
-router.get('/users/:id', async (req, res) => { // This is the route to use when you want to visit someone else's profile
+router.get('/users/:id', async (req, res) => { // This is the route to use when you want the details of another user
     const _id = req.params.id
 
     try {
