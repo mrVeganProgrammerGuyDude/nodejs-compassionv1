@@ -35,12 +35,13 @@ const Mission = require('./models/mission')
 const User = require('./models/user')
 
 // const main = async () => {
-    // const mission = await Mission.findById('6008195a58f812292c360665')
-    // await mission.populate('author').execPopulate()
-    // console.log(mission.author.name)
-// const user = await User.findById('6009b10fb7b7e624c0fd060b')
+//     const mission = await Mission.findById('601bd7e031cf29241c7007e6')
+//     await mission.populate('author').execPopulate()
+//     console.log(mission.author.username)
+// }
+// const main = async () => {
+// const user = await User.findById('6010189b1b0ff8421851f955')
 // await user.populate('userMissions').execPopulate()
-// console.log(user.userMissions)
-//  }
-
+// console.log(user.userMissions, 'eat poo')
+// }
 // main()
