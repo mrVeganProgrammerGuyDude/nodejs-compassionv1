@@ -5,7 +5,7 @@ const missionRouter = require('./routers/mission')
 const cors = require('cors')
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 
 app.use(cors()) //The order matters here. I needed to put this above the other app.use cocksuckers
@@ -31,8 +31,9 @@ app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
 
-const Mission = require('./models/mission')
-const User = require('./models/user')
+
+// const Mission = require('./models/mission')
+// const User = require('./models/user')
 
 // const main = async () => {
 //     const mission = await Mission.findById('601bd7e031cf29241c7007e6')
