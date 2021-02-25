@@ -27,6 +27,8 @@ app.use(missionRouter)
 //     next()
 // })
 
+console.log('you suck. This is in index.js in the node files.')
+
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
