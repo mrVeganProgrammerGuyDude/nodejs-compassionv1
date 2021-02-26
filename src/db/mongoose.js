@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 
-mongoose.connect('mongodb+srv://broccoli:DnkiaozXrTkRti5f@cluster0.o6fdy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://broccoli:VpuHsmccA15DiqkG@cluster0.o6fdy.mongodb.net/CIAAdb?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
