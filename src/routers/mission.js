@@ -25,7 +25,7 @@ router.get('/missions', async (req, res) => {
     const match = {}
     const sort = {}
 
-    console.log(req.query)
+    console.log(req.query) 
 
 
     if (req.query.completedCount) {
