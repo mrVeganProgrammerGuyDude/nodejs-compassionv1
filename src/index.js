@@ -1,22 +1,10 @@
-const express = require('express')
-require('./db/mongoose')
-const userRouter = require('./routers/user')
-const missionRouter = require('./routers/mission')
-const cors = require('cors')
-
-const app = express()
+const app = require('./app')
 const port = process.env.PORT
 
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
+})
 
-app.use(cors()) //The order matters here. I needed to put this above the other app.use cocksuckers
-
-
-
-
-app.use(express.json())
-app.use(userRouter)
-app.use(missionRouter)
- 
 // app.use((req, res, next) => {
 //     res.header("Access-Control-Allow-Origin", "*");
 //     res.header("Access-Control-Allow-Headers", "*");
@@ -26,13 +14,6 @@ app.use(missionRouter)
 //     }
 //     next()
 // })
-
-console.log('you suck. This is in index.js in the node files.')
-
-app.listen(port, () => {
-    console.log('Server is up on port ' + port)
-})
-
 
 // const Mission = require('./models/mission')
 // const User = require('./models/user')

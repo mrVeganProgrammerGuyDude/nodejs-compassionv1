@@ -78,7 +78,7 @@ userSchema.methods.toJSON = function () { // This is in video 112
 
 userSchema.methods.generateAuthToken = async function () {
     const user = this
-    const token = jwt.sign({ _id: user._id.toString() }, 'thisisasecret') // This is what makes the token. A token is a hashed output of the user ID and the secret.
+    const token = jwt.sign({ _id: user._id.toString() }, process.env.JWT_SECRET) // This is what makes the token. A token is a hashed output of the user ID and the secret.
 
     user.tokens = user.tokens.concat({ token: token }) // Concat adds { token } to the tokens array
     await user.save() // This saves the user to the database.
