@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 
 
 //OLD ONE THAT WORKS FOR LOCAL DATABASE
-mongoose.connect('mongodb://127.0.0.1:27017/CIAAdb', {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
